@@ -18,15 +18,15 @@ filename="./segments/segment"+str(j)+".txt"
 write = open(filename, "w")
 
 for line in file:
-    line.replace("“", "")
-    line.replace("”", "")
-    line.replace("’", "'")
-    line.replace("‘", "")
-    line.replace("…", ",")
-    line.replace("–", ",")
-    line.replace("—", ",")
-    line.replace(")", ",")
-    line.replace("(", ",")
+    line=line.replace("“", "")
+    line=line.replace("”", "")
+    line=line.replace("’", "'")
+    line=line.replace("‘", "")
+    line=line.replace("…", ",")
+    line=line.replace("–", ",")
+    line=line.replace("—", ",")
+    line=line.replace(")", ",")
+    line=line.replace("(", ",")
     write.write(line)
     i+=1
     if i==200:
